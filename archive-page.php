@@ -12,7 +12,7 @@ Template Name: Archive Page
     <div class="container content">
         <div class="page ">
             <h1 class="page-title">Archive</h1>
-            <?php    $args=array('order'=> 'DESC', posts_per_page'=> '1000');
+            <?php    $args=array('order'=> 'DESC', 'posts_per_page' =>'1000');
 
                 $query=new WP_Query($args); ?>
                             <?php if($query->have_posts()) : ?>
